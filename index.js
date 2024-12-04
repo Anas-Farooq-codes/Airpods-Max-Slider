@@ -5,12 +5,16 @@ const images = Array.from(slider.children);
 let imageIndex = 0;
 
 function updateSlider() {
+    
   // Reset all classes
+
   images.forEach((image) => {
     image.classList.remove('active', 'previous', 'next', 'inactive');
   });
 
+
   // Set active, previous, next, and inactive classes
+
   const previousIndex = (imageIndex - 1 + images.length) % images.length;
   const nextIndex = (imageIndex + 1) % images.length;
 
@@ -25,15 +29,18 @@ function updateSlider() {
   });
 
   // Update backgrounds
+
   backgrounds.forEach((background) => {
     background.style.opacity = 0;
   });
   backgrounds[imageIndex].style.opacity = 1;
 
   // Increment index
+
   imageIndex = (imageIndex + 1) % images.length;
 }
 
 // Initialize slider and set interval
+
 updateSlider();
-setInterval(updateSlider, 3000); // Match interval with animation duration
+setInterval(updateSlider, 3000); 

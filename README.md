@@ -3,8 +3,7 @@
 
 ## Demo
 
-[Link to Demo](#)  
-*(Add a link to a live demo of your slider, if applicable.)*
+[Live link](https://airpods-max-nine.vercel.app/)
 
 ## Features
 
